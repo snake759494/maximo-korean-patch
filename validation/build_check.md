@@ -20,6 +20,6 @@ OPENING: 3210 프레임(자막 2112), GOP 184 개 q 분포 1.6:147 1.8:10 2.0:10
 ENDING: 3019 프레임(자막 1479), GOP 175 개 q 분포 1.6:168 1.8:2 2.0:4 2.2:1, 최대 지연 4, 강제 0, ES 57964678 → 34951604 (60%, 264s)
   -> work\patched\ENDING.PSS OK (78086148 bytes)
 완료. 실패: 없음
-xdelta round-trip SHA-1: 7f53bff4c8c410ae2361dab684145fa83c6028fb (= 결과 BIN)
+xdelta round-trip SHA-1: 0102ece522f331d40db93fcbd5a3c80530f7cb03 (= 결과 BIN)
 동영상 6편: 결과 BIN 속 PSS == work/patched, 표본 섹터 EDC/ECC 정상
 ```

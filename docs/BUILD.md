@@ -36,6 +36,6 @@ movenc 는 편당 1~4분(q 후보 14벌 인코딩)이 걸립니다. faster-whisp
 ## 배포 파일
 
 ```
-xdelta3 -e -9 -S none -A -f -s "Maximo (Japan).bin" "Maximo (Japan) (Korean).bin" Maximo_PS2_KO_v1.0.xdelta
-xdelta3 -d -f -s "Maximo (Japan).bin" Maximo_PS2_KO_v1.0.xdelta roundtrip.bin   # 결과 SHA-1 비교
+xdelta3 -e -9 -S none -A -f -s "Maximo (Japan).bin" "Maximo (Japan) (Korean).bin" Maximo_PS2_KO_v1.0.1.xdelta
+xdelta3 -d -f -s "Maximo (Japan).bin" Maximo_PS2_KO_v1.0.1.xdelta roundtrip.bin   # 결과 SHA-1 비교
 ```

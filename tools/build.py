@@ -6,7 +6,7 @@
 Inputs : Maximo (Japan).bin (original), translation/strings_ko.tsv, translation/glyphs_jp.txt
 Outputs: patched ELF + FONT.PRT written into a copy of the disc image (same sizes, in place).
 """
-import sys, os, struct, csv, shutil, argparse
+import sys, os, struct, csv, shutil, argparse, unicodedata
 import numpy as np
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from cdimg import CD, RAW, HDR
@@ -69,7 +69,12 @@ def plan(rows, jpmap):
             if c not in jpmap:
                 raise SystemExit('glyph missing from JP font and not renderable: %r' % c)
             keep[c] = jpmap.index(c)
-    new = [c for c in used if c not in keep]
+    # the game also draws some symbol glyphs by code (e.g. the '%' after completion rates, digits of
+    # counters), so every non-kana/kanji glyph of the original font stays at its original slot
+    for i, c in enumerate(jpmap):
+        if i not in keep.values() and not unicodedata.name(c, '').startswith(('CJK', 'HIRAGANA', 'KATAKANA')):
+            keep[c if c not in keep else '%s#%d' % (c, i)] = i
+    new =[c for c in used if c not in keep]
     free = [i for i in range(NGLYPH) if i not in keep.values()]
     if len(new) > len(free):
         raise SystemExit('too many glyphs: need %d, free %d' % (len(new), len(free)))

@@ -1,7 +1,7 @@
 """원본 BIN 의 해시를 확인하고 xdelta 를 적용한 뒤 결과 해시까지 검사한다.
 
 사용:
-  python tools/apply_release.py --xdelta <xdelta3.exe> --source "Maximo (Japan).bin" --patch Maximo_PS2_KO_v1.0.xdelta --output "Maximo (Japan) (Korean).bin"
+  python tools/apply_release.py --xdelta <xdelta3.exe> --source "Maximo (Japan).bin" --patch Maximo_PS2_KO_v1.0.1.xdelta --output "Maximo (Japan) (Korean).bin"
 
 기존 출력 파일은 덮어쓰지 않는다. 원본·패치·결과 중 하나라도 해시가 다르면 실패로 끝낸다.
 성공하면 결과 BIN 옆에 같은 이름의 .cue 를 만든다.
@@ -10,9 +10,9 @@ import argparse, hashlib, os, subprocess, sys
 
 SOURCE_SIZE = 722884848
 SOURCE_SHA256 = "0d5c2a6359dcaa8e0e0d6ad57902e18b6b51ca9ebfc9ff47629c814e1d5b2662"
-PATCH_SHA256 = "3d6595b83614da90610ab640e2845e94b00de9bc042314c94bf5cca2e7c5096e"
+PATCH_SHA256 = "a869941ef1fbf9eb27503037714ddafc9d21b0517d43479636ed42e8b7433cd3"
 OUTPUT_SIZE = 722884848
-OUTPUT_SHA256 = "07c8fb6e3822cd70e925e319e2ad8a133bda499b7db86863dca12b1a56e18f77"
+OUTPUT_SHA256 = "89b711162976c097899c71de9dbd626e3613cec24838069064bcc49ec06f1d62"
 
 
 def sha256(path):
