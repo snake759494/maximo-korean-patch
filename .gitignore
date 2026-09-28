@@ -1,0 +1,48 @@
+# 게임 원본·산출물 (배포하지 않음)
+*.iso
+*.elf
+*.HAB
+*.SCS
+*.BMR
+*.PSS
+*.xdelta
+*.sav
+*.ps2
+*.p2s
+work/SLPM_659.59*
+work/FontBase*.bin
+work/GAME.HAB*
+work/hab/
+work/hab_out/
+work/bmr_out/
+work/patch_log.txt
+
+# 글꼴·외부 실행 파일·이미지·문서 스캔
+*.ttf
+*.otf
+*.exe
+*.dll
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.xls
+*.xlsx
+*.hwp
+*.zip
+*.7z
+
+# 파이썬
+__pycache__/
+*.pyc
+.venv/
+
+# 이 게임
+extract/
+*.BIN
+SLPM_656.80*
+
+# 막시모
+*.bin
+*.cue
+work/

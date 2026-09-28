@@ -1,0 +1,17 @@
+{
+ "version": "v1.0",
+ "date": "2026-09-28",
+ "game": "Maximo (Japan) / SLPM-62127 / PS2 (CD, BIN/CUE MODE2/2352)",
+ "asset": "Maximo_PS2_KO_v1.0.xdelta",
+ "asset_size": 178513659,
+ "asset_sha256": "3d6595b83614da90610ab640e2845e94b00de9bc042314c94bf5cca2e7c5096e",
+ "xdelta_options": "xdelta3 3.1.0, -e -9 -S none -A (no secondary compression, no application header)",
+ "source_bin_size": 722884848,
+ "source_bin_md5": "9f088972075dfcc9edbbf640e8921391",
+ "source_bin_sha1": "a8386a943c9e1f6889a5fa7061f0a890bbf5dc5d",
+ "source_bin_sha256": "0d5c2a6359dcaa8e0e0d6ad57902e18b6b51ca9ebfc9ff47629c814e1d5b2662",
+ "output_bin_size": 722884848,
+ "output_bin_md5": "df7389b4c094bd6a36f6df9c232168a4",
+ "output_bin_sha1": "7f53bff4c8c410ae2361dab684145fa83c6028fb",
+ "output_bin_sha256": "07c8fb6e3822cd70e925e319e2ad8a133bda499b7db86863dca12b1a56e18f77"
+}
