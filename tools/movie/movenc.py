@@ -90,7 +90,7 @@ def overlays(name):
 QS = (1.6, 1.8, 2.0, 2.2, 2.4, 2.7, 3.0, 3.4, 3.9, 4.5, 5.3, 6.5, 8.5, 12.0)   # 고정 양자화 후보 (고운 것부터)
 TMP = os.path.join(WORK, "movie", "tmp")
 VER = os.path.join(WORK, "movie", "ver")      # q 별 인코딩 (다시 고를 때 재사용)
-JOBS = 3
+JOBS = 1
 
 
 def source_key(name):

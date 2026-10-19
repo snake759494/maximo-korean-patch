@@ -1,10 +1,10 @@
 # 막시모 (Maximo) PS2 한글패치
 
-PS2 일본판 **マキシモ (Maximo, SLPM-62127)** 용 비공식 한국어 패치입니다. 게임 안의 모든 일본어 텍스트(메뉴, 설정, 메모리 카드 메시지, 상점, 어빌리티 이름·설명, 스테이지 이름, 마녀의 키스 설명 등)를 한국어로 바꾸고, 자막 없이 일본어 음성만 나오던 동영상 6편에 한글 자막을 넣었습니다. 현재 배포판은 **v1.0.1 (2026-09-28)** 입니다.
+PS2 일본판 **マキシモ (Maximo, SLPM-62127)** 용 비공식 한국어 패치입니다. 게임 안의 모든 일본어 텍스트(메뉴, 설정, 메모리 카드 메시지, 상점, 어빌리티 이름·설명, 스테이지 이름, 마녀의 키스 설명 등)를 한국어로 바꾸고, 자막 없이 일본어 음성만 나오던 동영상 6편에 한글 자막을 넣었습니다. 현재 배포판은 **v1.0.2 (2026-10-19)** 입니다.
 
 [패치 다운로드](https://github.com/snake759494/maximo-korean-patch/releases/latest) · [기술 설명](docs/TECHNICAL.md) · [재빌드](docs/BUILD.md) · [변경 기록](CHANGELOG.md) · [권리 안내](RIGHTS.md)
 
-릴리즈 첨부 파일은 **Maximo_PS2_KO_v1.0.1.xdelta 하나**입니다. 저장소에는 제작 소스·번역·검증 자료만 공개합니다. 원본 및 완성 디스크 이미지, 추출한 실행파일·텍스처·동영상, 글꼴 파일, 외부 실행 파일은 포함하지 않습니다. GitHub 가 자동 생성하는 Source code ZIP/TAR 는 저장소 소스의 압축본이며 게임 파일이 아닙니다.
+릴리즈 첨부 파일은 **Maximo_PS2_KO_v1.0.2.xdelta 하나**입니다. 저장소에는 제작 소스·번역·검증 자료만 공개합니다. 원본 및 완성 디스크 이미지, 추출한 실행파일·텍스처·동영상, 글꼴 파일, 외부 실행 파일은 포함하지 않습니다. GitHub 가 자동 생성하는 Source code ZIP/TAR 는 저장소 소스의 압축본이며 게임 파일이 아닙니다.
 
 > ⚠️ `translation/` 폴더(특히 `translation/movie/`)에는 게임 대사와 동영상 자막 전문이 들어 있어 **줄거리 스포일러**가 포함됩니다. 게임을 먼저 즐기실 분은 열어 보지 마세요. 이 README 에는 줄거리 내용을 적지 않았습니다.
 
@@ -24,11 +24,11 @@ PS2 일본판 **マキシモ (Maximo, SLPM-62127)** 용 비공식 한국어 패�
 | **원본 BIN MD5** | `9f088972075dfcc9edbbf640e8921391` |
 | 원본 BIN SHA-1 | `a8386a943c9e1f6889a5fa7061f0a890bbf5dc5d` |
 | 원본 BIN SHA-256 | `0d5c2a6359dcaa8e0e0d6ad57902e18b6b51ca9ebfc9ff47629c814e1d5b2662` |
-| xdelta 파일 크기 | 178,081,441 바이트 |
-| xdelta SHA-256 | `a869941ef1fbf9eb27503037714ddafc9d21b0517d43479636ed42e8b7433cd3` |
+| xdelta 파일 크기 | 178,065,607 바이트 |
+| xdelta SHA-256 | `a07c67d0d4feecb050794c1f798570d24f371f4473cc7a54ffa734be8bcc6724` |
 | 적용 결과 BIN 크기 | 722,884,848 바이트 (원본과 같음) |
-| 적용 결과 BIN SHA-1 | `0102ece522f331d40db93fcbd5a3c80530f7cb03` |
-| 적용 결과 BIN SHA-256 | `89b711162976c097899c71de9dbd626e3613cec24838069064bcc49ec06f1d62` |
+| 적용 결과 BIN SHA-1 | `83e583b794f9b9f77db0db4db04e4f6541f4c2de` |
+| 적용 결과 BIN SHA-256 | `8d1389d800759bb799bce531cf0da136911ac1a01f4dc502506bbcef47051a98` |
 
 모든 수정은 원래 파일 자리 안에서 같은 크기로 이루어지고, 바뀐 섹터의 EDC/ECC 도 다시 계산했습니다. 동영상이 들어 있어 xdelta 가 큰 편(약 178MB)입니다. 원본 게임 파일은 사용자가 별도로 준비해야 합니다.
 
@@ -44,7 +44,7 @@ Get-FileHash -Algorithm MD5 -LiteralPath '.\Maximo (Japan).bin'
 
 ### xdelta UI 사용
 
-1. 릴리즈에서 `Maximo_PS2_KO_v1.0.1.xdelta` 를 받습니다.
+1. 릴리즈에서 `Maximo_PS2_KO_v1.0.2.xdelta` 를 받습니다.
 2. xdelta3 패치를 지원하는 도구의 **Apply Patch** 기능을 엽니다.
 3. **Patch** 에 xdelta 파일, **Source File** 에 해시가 일치하는 원본 `.bin` 을 선택합니다.
 4. **Output File** 에 새 파일명(예: `Maximo (Japan) (Korean).bin`)을 지정합니다.
@@ -55,13 +55,13 @@ xdelta 는 호환성을 위해 2차 압축과 파일 경로 헤더 없이 만들
 ### 명령줄 사용
 
 ```powershell
-.\xdelta3.exe -d -s '.\Maximo (Japan).bin' '.\Maximo_PS2_KO_v1.0.1.xdelta' '.\Maximo (Japan) (Korean).bin'
+.\xdelta3.exe -d -s '.\Maximo (Japan).bin' '.\Maximo_PS2_KO_v1.0.2.xdelta' '.\Maximo (Japan) (Korean).bin'
 ```
 
 해시를 자동 검사하고 `.cue` 까지 만들어 주는 도구도 있습니다(Python 3 + xdelta3 필요, 기존 출력 파일은 덮어쓰지 않음).
 
 ```powershell
-python tools/apply_release.py --xdelta '.\xdelta3.exe' --source '.\Maximo (Japan).bin' --patch '.\Maximo_PS2_KO_v1.0.1.xdelta' --output '.\Maximo (Japan) (Korean).bin'
+python tools/apply_release.py --xdelta '.\xdelta3.exe' --source '.\Maximo (Japan).bin' --patch '.\Maximo_PS2_KO_v1.0.2.xdelta' --output '.\Maximo (Japan) (Korean).bin'
 ```
 
 ### PCSX2 에서 실행
@@ -74,7 +74,7 @@ python tools/apply_release.py --xdelta '.\xdelta3.exe' --source '.\Maximo (Japan
 | --- | --- |
 | 게임 텍스트 | 실행파일(SLPM_621.27) 안의 글리프 번호 문자열 **223개(원문 약 2,500자) 전부**. 메뉴·설정, 메모리 카드 메시지, 상점 품목, 어빌리티 이름과 설명, 스테이지·보스 이름, 마녀의 키스 설명, 일시정지·컨티뉴 화면 |
 | 글꼴 | 폰트 텍스처(FONT.PRT, 512×512)를 새로 배치. 한글 344자 + 원본 기호(숫자·버튼 아이콘·%·영문자·문장부호 등) 56자는 원래 자리 그대로. 원작처럼 흰 글자 + 어두운 외곽선 |
-| 동영상 자막 | 오프닝·이벤트 4편·엔딩 **6편, 자막 80줄**. 원래 자막이 없던 일본어 음성을 받아쓰고 번역해 화면 아래에 합성. 음성은 원본 그대로, 파일 크기 동일 |
+| 동영상 자막 | 오프닝·이벤트 4편·엔딩 **6편, 자막 81줄**. 원래 자막이 없던 일본어 음성을 받아쓰고 번역해 화면 아래에 합성. 음성은 원본 그대로, 파일 크기 동일 |
 | 이미지 | 텍스처 1,890장 전수 조사 결과 일본어가 그려진 이미지는 폰트 텍스처 1장뿐이라 별도 수정 없음 |
 
 ### 번역 원칙

@@ -1,17 +1,17 @@
 {
- "version": "v1.0.1",
- "date": "2026-09-28",
+ "version": "v1.0.2",
+ "date": "2026-10-19",
  "game": "Maximo (Japan) / SLPM-62127 / PS2 (CD, BIN/CUE MODE2/2352)",
- "asset": "Maximo_PS2_KO_v1.0.1.xdelta",
- "asset_size": 178081441,
- "asset_sha256": "a869941ef1fbf9eb27503037714ddafc9d21b0517d43479636ed42e8b7433cd3",
+ "asset": "Maximo_PS2_KO_v1.0.2.xdelta",
+ "asset_size": 178065607,
+ "asset_sha256": "a07c67d0d4feecb050794c1f798570d24f371f4473cc7a54ffa734be8bcc6724",
  "xdelta_options": "xdelta3 3.1.0, -e -9 -S none -A (no secondary compression, no application header)",
  "source_bin_size": 722884848,
  "source_bin_md5": "9f088972075dfcc9edbbf640e8921391",
  "source_bin_sha1": "a8386a943c9e1f6889a5fa7061f0a890bbf5dc5d",
  "source_bin_sha256": "0d5c2a6359dcaa8e0e0d6ad57902e18b6b51ca9ebfc9ff47629c814e1d5b2662",
  "output_bin_size": 722884848,
- "output_bin_md5": "ffcfbcb8a76782a452c2de6a43b9bce0",
- "output_bin_sha1": "0102ece522f331d40db93fcbd5a3c80530f7cb03",
- "output_bin_sha256": "89b711162976c097899c71de9dbd626e3613cec24838069064bcc49ec06f1d62"
+ "output_bin_md5": "1047e7a73d6e15c2e5541cad08d1e61c",
+ "output_bin_sha1": "83e583b794f9b9f77db0db4db04e4f6541f4c2de",
+ "output_bin_sha256": "8d1389d800759bb799bce531cf0da136911ac1a01f4dc502506bbcef47051a98"
 }
